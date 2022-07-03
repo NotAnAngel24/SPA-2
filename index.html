@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--theme-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Phil Da Air Weather Checker</a>
+        </div>
+    </nav>
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Phil Da Air</h1>
+            <p class="lead">Enter Location to Check Weather</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="Location">
+        </div>
+        <br>
+        <div id="profile"></div>
+    </div>
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id="submit">Enter</button>
+    </div>
+
+    <div id="content">
+
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">
+        Follow me on
+        <a href="https://www.instagram.com/allaboutai_ml/" target="_blank">IG</a> for updates.
+
+    </footer>
+</body>
+<script src=" findex.js "></script>
+<script src="ui.js "></script>
+<script src="app.js "></script>
+
+</html>
+
+<!--  ---------------------------------------------------------------->
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en "> -->
+<!-- head contains favicon and title tabs and meta-->
+
+<!-- <head> -->
+<!--meta viewport to autmatic scale the website---------------------------------------------------------------->
+<!-- <meta name="viewport " content="width=device-width, initial-scale=1.0 " />
+    <meta charset="UTF-8 " />
+
+    <title>
+        PHIL DA AIR
+    </title>
+    <style>
+        /*---------------------Body background--------------------*/ -->
+<!-- /*---------------------colour theme used 'back to earth' from ui gradient --------------------*/
+
+        body {
+            background: black;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, black, #00C9FF, black);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, black, #00C9FF, black);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+        /*header-content*/
+
+        #header {
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+        /*animation*/
+
+        #header,
+        #home,
+        #about,
+        #footer {
+            animation-duration: 2s;
+            animation-name: slidein;
+            transition-duration: ease-in-out;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            75% {
+                font-size: 300%;
+                margin-left: 25%;
+                width: 150%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        /*navbar*/
+
+        #navbar {
+            background-color: transparent;
+            overflow: hidden;
+            height: 90px;
+            width: 1250px;
+            float: left;
+            border: 1px solid transparent;
+            padding: auto;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+        }
+
+        .push {
+            margin-top: auto;
+        }
+        /*li within navbars*/
+
+        li {
+            color: transparent;
+        }
+
+        a:link,
+        a:visited,
+        a.li {
+            background: #fc00ff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #00dbde, #fc00ff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #00dbde, #fc00ff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 0px 50px;
+            text-align: absolute;
+            text-decoration: none;
+            display: inline-block;
+            -webkit-background-clip: text;
+        }
+        /*for phones and smaller screen devices*/
+
+        @media screen and (max-width: 500px) {
+            #header,
+            #home,
+            #about,
+            #footer {
+                float: center;
+                display: block;
+                width: 100%;
+                text-align: left;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+            }
+        }
+        /*body contents filled with information */
+
+        #home {
+            background-color: transparent;
+            clear: both;
+            height: 600px;
+            border: 1px transparent;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        #about {
+            background-color: transparent;
+            clear: both;
+            height: 300px;
+            border: 1px transparent;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+        /*Para*/
+        /*----Dark jungle green is much like a darker version of the jungle green tone that resembles a lush forest setting, yet the color contains far more traces of black than anything else.
+        Dark jungle green
+        Hex #1A2421
+        RGB 26, 36, 33
+        CMYK 28, 0, 8, 86
+        */
+
+        p {
+            text-align: left;
+            position: static;
+            top: 50%;
+            left: 50%;
+            font-size: 30px;
+            background: #1A2421;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        /* heading 1 */
+
+        h1 {
+            background: #ff00cc;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #333399, #ff00cc);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        h2 {
+            background: #00F260;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0575E6, #00F260);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        /*footer  */
+
+        #footer {
+            background-color: transparent;
+            clear: both;
+            text-align: center;
+            border: 1px transparent;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .loading-text {
+            font-size: 50%;
+            color: gray;
+        }
+    </style>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js "></script>
+</head>
+
+body--which contains: header, navigation menu: logo, home, about, products, lifestyle, conatcs, main contents: hero page, home page, about page, products, lifestyle footer page: which contains contacts
+
+<body>
+    <div class="container ">
+        <div class="headertitle ">
+            <h1> PHIL DA AIR </h1>
+        </div>
+    </div>
+    <div class="notification "></div>
+    <div class="weathercontainer "></div>
+    <div class="weathericon "></div>
+    <div class="temperaturevalue ">
+        <p><span></span></p>
+    </div>
+    <div class="temperaturedescription ">
+        <p>-</p>
+    </div>
+    <div class="location ">
+        <p>-</p>
+    </div>
+    <script src="index.js "></script>
+
+    barrier-
+    !-- <div id="navbar "> -->
+<!-- <h2>
+            <li class="active "><a class="#home " href="#home ">Weather Data</li><a></h2>
+            <h2>
+                <li><a class="#about " href="#about ">About</a></li>
+        </h2>
+        <h2>
+            <li><a class="footer " href="#footer ">Random Environmental Data</a></li>
+        </h2>
+    </div>  -->
+
+
+<!-- insert contens inside------------------------------------------------>
+<!-- <div id="about ">
+        <h1>About</h1>
+        <p> A Single Page App which gives environmental data to any users. "The earth is what we all have in common.” — Wendell Berry </p>
+                </div>
+                <div id="home">
+                    <h1>Get Weather Information</h1>
+
+                </div>
+                footer and contacts----------------------------------------------
+
+                <div id="footer">
+                    <h1>Get Random Environmental Information</h1>
+
+                </div>
+                <script>
+                    /*geolocation API for requesting user location*/
+                    let userPos;
+                    let scrollPos = window.scrollY;
+                    const successCallback = (position) => {
+                        console.log(position);
+                    };
+                    const errorCallback = (position) => {
+                        console.log(position);
+                    }
+                    navigator.geolocation.getCurrentPosition(successCallback,
+                        errorCallback);
+
+                    /*----for fetching air quality information----*/
+                    fetch('https://api.ambeedata.com')
+                        .then(response => response.json())
+                        .then(data => console.log(data));
+                    APIKey = "ef484e291a94243f336352f07d186ffb41ba2516b8c6fbe244456074b66d7ad2";
+                    console.log(fetch);
+
+                    // /*Air quality current -Geospatial search---*/
+                    fetch("https://api.ambeedata.com/latest/by-lat-lng?lat=12.9889055&lng=77.574044", {
+                            "method": "GET",
+                            "headers": {
+                                "x-api-key": "ef484e291a94243f336352f07d186ffb41ba2516b8c6fbe244456074b66d7ad2",
+                                "Content-type": "application/json"
+                            }
+                        }) -- >
+                        <!-.then(response => { -->
+<!-- //console.log(response); -->
+<!-- //                 return response.json(); -->
+<!-- //             }) -->
+<!-- //             .then(json => { -->
+<!-- //                 console.log(json); -->
+<!-- //             }) -->
+<!-- //             .catch(err => { -->
+<!-- //                 console.error(err); -->
+<!-- //             }); -->
+
+
+
+<!-- //         /*Not needed*/ -->
+<!-- //         /*request section*/ -->
+<!-- //         //new Request('https://api.ambeedata.com') -->
+<!-- //         // new Request('https://api.ambeedata.com', Blob); -->
+<!-- //         //console.log(Request);
+                        //
+                </script>
+                // </body> -->
+
+<!-- // </html> -->
